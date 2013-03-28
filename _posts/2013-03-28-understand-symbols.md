@@ -7,11 +7,11 @@ tags: [ruby, symbol]
 ---
 {% include JB/setup %}
 
-最近在看Russ Olsen写的Eluquent Ruby。目前让我印象最深刻的一章是第六章-
+最近在看Russ Olsen写的*Eluquent Ruby*。目前让我印象最深刻的一章是第六章-
 Use Symbols to Stand for Something。本人也是刚刚开始自学Ruby，Ruby中很多较新的概念我都没法完全理解。相信也有很多人对Symbol的概念不太清晰，即使平时知道怎么用，也讲不出来Symbol的奥妙，不过看了Russ的解释后，你就一定清楚什么是Symbol，为什么要有Symbol，以及Ruby中的Symbol为什么是这个样子。
 
 
-**Symbol就是String!**
+## Symbol就是String!
 
 一个符号就是字符或者字符串。不管是`"dog"`还是`:dog`都是由一个d、一个o和一个g三个字母构成。实际上在Ruby中，两者之间不仅可以相互转换，有些时候甚至是可以等效的。
 比如在ActionRecord中`book = Book.find(:all)`也可以写出`book = Book.find('all')`。

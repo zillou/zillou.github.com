@@ -7,6 +7,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 markdown: rdiscount
+paginate: 3
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -14,7 +15,7 @@ markdown: rdiscount
 title : Recorder
 tagline: Site Tagline
 author :
-  name : Derrick Zhang
+  name : zillou
   email : robot.zillou@gmail.com
   github : zillou
   twitter : zillou
@@ -27,7 +28,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://zillou.me
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -81,10 +82,10 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  # comments :
-  #   provider : disqus
-  #   disqus :
-  #     short_name : jekyllbootstrap
+  comments :
+    provider : disqus
+    disqus :
+      short_name : zillou
   #   livefyre :
   #     site_id : 123
   #   intensedebate :
