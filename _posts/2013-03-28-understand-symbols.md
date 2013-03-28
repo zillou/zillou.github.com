@@ -12,6 +12,7 @@ Use Symbols to Stand for Something。本人也是刚刚开始自学Ruby，Ruby�
 
 
 **Symbol就是String!**
+
 一个符号就是字符或者字符串。不管是`"dog"`还是`:dog`都是由一个d、一个o和一个g三个字母构成。实际上在Ruby中，两者之间不仅可以相互转换，有些时候甚至是可以等效的。
 比如在ActionRecord中`book = Book.find(:all)`也可以写出`book = Book.find('all')`。
 
@@ -22,7 +23,8 @@ Use Symbols to Stand for Something。本人也是刚刚开始自学Ruby，Ruby�
 答案是我们平时代码中使用字符串(strings of characters)有主要有两种很不一样的目的:
 
 1. 表示字符数据，比如地址、名字。
-2. 仅仅用作名字，比如某种状态，如"active"或者"cancelled"，
+2. 仅仅用作名字，比如某种状态，如"active"或者"cancelled"。
+
 
 第一种情况的时候，字符本身是重要的，也有操作这些作为数据的字符的需要；而第二种情况，这个名字中的字符本身是不重要的(你也可以用1来表示Active的状态，用0来表示Cancelled的状态)，所以就没有必要去操作这种情况中的字符了。
 
@@ -35,15 +37,15 @@ Ruby中的String的设计是为了处理字符数据的方便；而Symbol的一�
 
 所以下面我们来回顾Symbol的几个特性：
 
-### 1. 一个Symbol只有一个实例
+##### 1. 一个Symbol只有一个实例
 
     a = :active
     b = :active
     b = c
 
-这段代码中a, b, c其实都是只想同一个对象。
+这段代码中a, b, c其实都是指向同一个对象。
 
-### 2.Symbol不可变
+##### 2.Symbol不可变
 
 我们知道Symbol创建好之后就不能再对其进行修改的操作了。因为我们也没有必要在运行中去为一个东西改名字。所以你一旦创建好一个叫:active的Symbol之后，你不能也不需要在它的生命周期中去改变它。
 
