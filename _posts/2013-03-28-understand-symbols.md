@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "理解ruby中的Symbol"
-description: "Symbol是Ruby中最让费解的概念之一，直到我读到Russ Olsen的解释，Symbol就是另一种字符串，优化来做代表某物的名字，Symbol就是Symbol，就是指代某物的符号。"
+description: "Symbol是Ruby中最让我费解的概念之一，直到我读到Russ Olsen的解释，Symbol就是另一种字符串，优化来做代表某物的名字，Symbol就是Symbol，就是指代某物的符号。"
 category: programming
 tags: [ruby, symbol]
 ---
 {% include JB/setup %}
 
-最近在看Russ Olsen写的*Eluquent Ruby*。目前让我印象最深刻的一章是第六章-
+最近在看Russ Olsen写的*[Eloquent Ruby](http://book.douban.com/subject/6052175/)*。目前让我印象最深刻的一章是第六章-
 Use Symbols to Stand for Something。本人也是刚刚开始自学Ruby，Ruby中很多较新的概念我都没法完全理解。相信也有很多人对Symbol的概念不太清晰，即使平时知道怎么用，也讲不出来Symbol的奥妙，不过看了Russ的解释后，你就一定清楚什么是Symbol，为什么要有Symbol，以及Ruby中的Symbol为什么是这个样子。
 
 
@@ -35,7 +35,7 @@ Use Symbols to Stand for Something。本人也是刚刚开始自学Ruby，Ruby�
 
 Ruby中的String的设计是为了处理字符数据的方便；而Symbol的一切设计都是基于用Symbol来作为一个名字，代表某物这个宗旨的。
 
-所以下面我们来回顾Symbol的几个特性：
+所以也就很容易理解Symbol的特性了：
 
 ##### 1. 一个Symbol只有一个实例
 
