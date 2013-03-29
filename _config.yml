@@ -12,11 +12,11 @@ paginate: 3
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : zillou's Recorder
+title : zillou.me
 tagline: Site Tagline
 author :
   name : zillou
-  email : robot.zillou@gmail.com
+  email : mail@zillou.me
   github : zillou
   twitter : zillou
 
