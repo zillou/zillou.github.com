@@ -6,32 +6,35 @@ title: zillou's recorder
 
 <div id="page">
 {% for post in paginator.posts %}
-
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
+<h1>
+  <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+</h1>
+<div class="content">
+  {{ post.content | truncate: 300 }} <br />
+  <a href="{{ post.url }}" class="read_more">继续阅读</a>
+  <div class="clear"></div>
+ </div>
+  <p class="pub-date">
     <span class="date">{{ post.date | date: "%Y年%m月%d日" }}</span>
   </p>
-
-  <div class="content">
-    {{ post.description }} <br />
-    <a href="{{ post.url }}">继续阅读</a>
-  </div>
 {% endfor %}
 </div>
 
 <!-- Pagination links -->
 <div class="pagination">
+  <span class="previous">
   {% if paginator.previous_page %}
-    <a href="/page{{ pageinator.previous_page }}" class="previous">更早的文章</a>
-  {% else %}
-    <span class="previous">更早的文章</span>
+    {% if paginator.previous_page == 1 %}
+      <a href="/page{{ pageinator.previous_page }}" class="previous">更早的文章</a>
+    {% else %}
+      <a href="/page{{ pageinator.previous_page }}" class="previous">更早的文章</a>
+    {% endif %}
   {% endif %}
-  <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
+  </span>
+  <span class="next">
   {% if paginator.next_page %}
     <a href="/page{{paginator.next_page}}">较新的文章</a>
-  {% else %}
-    <span class="next">Next</span>
   {% endif %}
+  </span>
 </div>
 
