@@ -10,7 +10,7 @@ title: zillou's recorder
   <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
 </h1>
 <div class="content">
-  {{ post.content | truncate: 300 }} <br />
+  {{ post.content | truncatewords: 300 }} <br />
   <a href="{{ post.url }}" class="read_more">继续阅读</a>
   <div class="clear"></div>
  </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "理解ruby中的Symbol"
+title: "理解Ruby中的Symbol"
 description: "Symbol是Ruby中最让我费解的概念之一，直到我读到Russ Olsen的解释，Symbol就是另一种字符串，优化来做代表某物的名字，Symbol就是Symbol，就是指代某物的符号。"
 category: programming
 tags: [ruby, symbol]
@@ -47,5 +47,5 @@ Ruby中的String的设计是为了处理字符数据的方便；而Symbol的一�
 
 ##### 2.Symbol不可变
 
-我们知道Symbol创建好之后就不能再对其进行修改的操作了。因为我们也没有必要在运行中去为一个东西改名字。所以你一旦创建好一个叫:active的Symbol之后，你不能也不需要在它的生命周期中去改变它。
+我们知道Symbol创建好之后就不能再对其进行修改的操作了。因为我们也没有必要在运行中去为一个东西改名字。所以你一旦创建好一个叫`:active`的Symbol之后，你不能也不需要在它的生命周期中去改变它。
 
